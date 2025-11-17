@@ -35,6 +35,7 @@ static char *strupr(char *str) {
     }
     return str;
 }
+#endif
 
 char* DFRobot_PH::strupr(char* str) {
     if (str == NULL) return NULL;
