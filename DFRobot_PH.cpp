@@ -25,6 +25,17 @@
 
 #define PHVALUEADDR 0x00    //the start address of the pH calibration parameters stored in the EEPROM
 
+#ifndef strupr
+static char *strupr(char *str) {
+    char *next = str;
+    while (*next != '\0') {
+        if (*next >= 0x61 && *next <= 0x7A)
+            *next = *next - 0x20;
+        next++;
+    }
+    return str;
+}
+
 char* DFRobot_PH::strupr(char* str) {
     if (str == NULL) return NULL;
     char *ptr = str;

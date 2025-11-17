@@ -1,3 +1,10 @@
+## Ciara's changes
+The original library won't compile on the Arduino Uno R4 WiFi, with the compiler citing the absence of the function "strupr".
+All I have done is write a very basic "string to uppercase" function and conditionally include it if one is not found.
+
+### Installation
+Go to the Arduino libraries folder and clone this repo. Make sure you don't have the original library since they have the same names and will probably conflict.
+
 ## DFRobot_PH
 
 * [中文版](./README_CN.md)
